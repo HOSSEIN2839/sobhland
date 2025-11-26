@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>اضافه کردن محصول</title>
+</head>
+<body>
+
+<h2>اضافه کردن محصول جدید</h2>
+
+<form action="http://localhost/sobhland/add_product.php" method="POST" enctype="multipart/form-data">
+
+    <label>نام محصول:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>توضیحات:</label><br>
+    <textarea name="description"></textarea><br><br>
+
+    <label>قیمت:</label><br>
+    <input type="number" name="price" required><br><br>
+
+    <label>ID دسته (مثلاً 1):</label><br>
+    <input type="number" name="category_id" required><br><br>
+
+    <label>تصویر محصول:</label><br>
+    <input type="file" name="image" required><br><br>
+
+    <button type="submit">اضافه کردن محصول</button>
+
+</form>
+
+</body>
+</html>
